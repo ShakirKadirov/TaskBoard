@@ -9,24 +9,37 @@ import UIKit
 
 class HomeView: UIView {
     
+    lazy var boardTableView: UITableView = {
+        let table = UITableView()
+        table.backgroundColor = .gray
+        table.translatesAutoresizingMaskIntoConstraints = false
+        return table
+    }()
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        backgroundColor = .systemGray
-        setConstraints()
+        setupUI()
+        
     }
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
+    func setupUI(){
+        addSubview(boardTableView)
+        setConstraints()
+    }
+    
+    
     func setConstraints(){
         NSLayoutConstraint.activate([
-            topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor),
-            leadingAnchor.constraint(equalTo: safeAreaLayoutGuide.leadingAnchor),
-            trailingAnchor.constraint(equalTo: safeAreaLayoutGuide.trailingAnchor),
-            bottomAnchor.constraint(equalTo: safeAreaLayoutGuide.bottomAnchor),
-
+            boardTableView.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor),
+            boardTableView.leadingAnchor.constraint(equalTo: leadingAnchor),
+            boardTableView.trailingAnchor.constraint(equalTo: trailingAnchor),
+            boardTableView.bottomAnchor.constraint(equalTo: safeAreaLayoutGuide.bottomAnchor)
         ])
     }
+    
+
 }

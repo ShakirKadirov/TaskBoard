@@ -6,9 +6,10 @@
 //
 
 import Foundation
+import UIKit
 
 struct MokeData{
     let title: String
-    let color: String
-    let date: Date
+    let color: UIColor
+    let date: String
 }

@@ -9,7 +9,12 @@ import UIKit
 
 class HomeView: UIView {
     
-    let tableData = ["1"]
+    var navigationController: UINavigationController?
+    
+    let tableData: [MokeData] = [
+        MokeData(title: "one", color: .blue, date: "10 June"),
+        MokeData(title: "two", color: .green, date: "10 Jan")
+    ]
     
     lazy var boardTableView: UITableView = {
         let table = UITableView()
@@ -57,9 +62,15 @@ extension HomeView: UITableViewDelegate, UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = boardTableView.dequeueReusableCell(withIdentifier: BoardTableViewCell.reuseID, for: indexPath) as! BoardTableViewCell
-        
+        cell.setupCell(title: tableData[indexPath.row].title)
         return cell
     }
     
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+         let item = tableData[indexPath.row]
+         
+         let detail = DetailViewController()
+         navigationController?.pushViewController(detail, animated: true)
+     }
+
 }

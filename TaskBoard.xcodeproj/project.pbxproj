@@ -10,6 +10,9 @@
 		C7414D0D2BF8DC8900DAAB2B /* CreateBoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7414D0C2BF8DC8900DAAB2B /* CreateBoardView.swift */; };
 		C7414D0F2BF8E8D500DAAB2B /* BoardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7414D0E2BF8E8D500DAAB2B /* BoardTableViewCell.swift */; };
 		C7414D112BF8EAFC00DAAB2B /* MokeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7414D102BF8EAFC00DAAB2B /* MokeData.swift */; };
+		C7414D132BF8EDBC00DAAB2B /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7414D122BF8EDBC00DAAB2B /* DetailViewController.swift */; };
+		C7414D152BF8F7BE00DAAB2B /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7414D142BF8F7BE00DAAB2B /* Board.swift */; };
+		C7414D172BF8F83B00DAAB2B /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7414D162BF8F83B00DAAB2B /* Task.swift */; };
 		C7F6D85C2BF8AF2B00728116 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F6D85B2BF8AF2B00728116 /* AppDelegate.swift */; };
 		C7F6D85E2BF8AF2B00728116 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F6D85D2BF8AF2B00728116 /* SceneDelegate.swift */; };
 		C7F6D8602BF8AF2B00728116 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F6D85F2BF8AF2B00728116 /* HomeViewController.swift */; };
@@ -26,6 +29,9 @@
 		C7414D0C2BF8DC8900DAAB2B /* CreateBoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateBoardView.swift; sourceTree = "<group>"; };
 		C7414D0E2BF8E8D500DAAB2B /* BoardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardTableViewCell.swift; sourceTree = "<group>"; };
 		C7414D102BF8EAFC00DAAB2B /* MokeData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MokeData.swift; sourceTree = "<group>"; };
+		C7414D122BF8EDBC00DAAB2B /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		C7414D142BF8F7BE00DAAB2B /* Board.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Board.swift; sourceTree = "<group>"; };
+		C7414D162BF8F83B00DAAB2B /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		C7F6D8582BF8AF2B00728116 /* TaskBoard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TaskBoard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7F6D85B2BF8AF2B00728116 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C7F6D85D2BF8AF2B00728116 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -113,6 +119,7 @@
 			children = (
 				C7F6D85F2BF8AF2B00728116 /* HomeViewController.swift */,
 				C7F6D88B2BF8C79800728116 /* HomeView.swift */,
+				C7414D122BF8EDBC00DAAB2B /* DetailViewController.swift */,
 				C7414D0E2BF8E8D500DAAB2B /* BoardTableViewCell.swift */,
 			);
 			path = HomeScreen;
@@ -138,6 +145,8 @@
 			isa = PBXGroup;
 			children = (
 				C7F6D8842BF8C47300728116 /* DataBaseManager.swift */,
+				C7414D142BF8F7BE00DAAB2B /* Board.swift */,
+				C7414D162BF8F83B00DAAB2B /* Task.swift */,
 				C7414D102BF8EAFC00DAAB2B /* MokeData.swift */,
 			);
 			path = Models;
@@ -229,13 +238,16 @@
 				C7414D0F2BF8E8D500DAAB2B /* BoardTableViewCell.swift in Sources */,
 				C7F6D8602BF8AF2B00728116 /* HomeViewController.swift in Sources */,
 				C7F6D88C2BF8C79800728116 /* HomeView.swift in Sources */,
+				C7414D132BF8EDBC00DAAB2B /* DetailViewController.swift in Sources */,
 				C7F6D85C2BF8AF2B00728116 /* AppDelegate.swift in Sources */,
 				C7F6D8792BF8B1AE00728116 /* TabBarViewController.swift in Sources */,
+				C7414D152BF8F7BE00DAAB2B /* Board.swift in Sources */,
 				C7F6D85E2BF8AF2B00728116 /* SceneDelegate.swift in Sources */,
 				C7414D112BF8EAFC00DAAB2B /* MokeData.swift in Sources */,
 				C7414D0D2BF8DC8900DAAB2B /* CreateBoardView.swift in Sources */,
 				C7F6D88F2BF8CF2200728116 /* CreateBoardViewController.swift in Sources */,
 				C7F6D8852BF8C47300728116 /* DataBaseManager.swift in Sources */,
+				C7414D172BF8F83B00DAAB2B /* Task.swift in Sources */,
 				C7F6D87B2BF8B2E400728116 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

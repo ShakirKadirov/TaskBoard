@@ -6,8 +6,19 @@
 //
 
 import Foundation
+import RealmSwift
 
 
-struct Board{
+class Board: Object {
+    @Persisted(primaryKey: true) var id:String = UUID().uuidString
+    @Persisted var title: String = ""
+    @Persisted var date: Date = Date()
+    // 
+    @Persisted var tasks: List<Task>
+    
+}
+
+
+class Task: Object{
     
 }

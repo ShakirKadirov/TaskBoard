@@ -11,10 +11,7 @@ class HomeView: UIView {
     
     var navigationController: UINavigationController?
     
-    let tableData: [MokeData] = [
-        MokeData(title: "one", color: .blue, date: "10 June"),
-        MokeData(title: "two", color: .green, date: "10 Jan")
-    ]
+    private let manager = DataBaseManager()
     
     lazy var boardTableView: UITableView = {
         let table = UITableView()
@@ -57,12 +54,14 @@ class HomeView: UIView {
 extension HomeView: UITableViewDelegate, UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return tableData.count
+        manager.getBoard().count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = boardTableView.dequeueReusableCell(withIdentifier: BoardTableViewCell.reuseID, for: indexPath) as! BoardTableViewCell
-        cell.setupCell(title: tableData[indexPath.row].title)
+        if let board = tableData?[indexPath.row] {
+            cell.setupCell = manager.
+        }
         return cell
     }
     

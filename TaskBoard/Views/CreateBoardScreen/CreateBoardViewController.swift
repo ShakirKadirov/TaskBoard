@@ -8,8 +8,10 @@
 import UIKit
 
 class CreateBoardViewController: UIViewController {
-    
+
     var backButton: UIBarButtonItem!
+    weak var tableView: UITableView?
+    var buttonHandler: (()->Void)?
     
     private let createBoardView = CreateBoardView()
     
@@ -28,6 +30,11 @@ class CreateBoardViewController: UIViewController {
         
         backButton = UIBarButtonItem(title: "Back", style: .plain, target: self, action: #selector(backButtonTapped))
         navigationItem.leftBarButtonItem = backButton
+        
+        createBoardView.buttonHandler = { [weak self] in
+            self?.backButtonTapped()
+            self?.buttonHandler?()
+        }
     }
     
     @objc func backButtonTapped() {

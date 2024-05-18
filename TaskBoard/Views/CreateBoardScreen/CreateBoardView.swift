@@ -9,6 +9,9 @@ import UIKit
 
 class CreateBoardView: UIView {
     
+    var buttonHandler: (()->Void)?
+    private let manager = DataBaseManager()
+
     lazy var titleTextField: UITextField = {
         let textField = UITextField()
         textField.placeholder = "Enter board title"
@@ -60,16 +63,14 @@ class CreateBoardView: UIView {
     }
     
     @objc func createButtonTapped() {
-           guard let title = titleTextField.text, !title.isEmpty else {
-               print("Title is empty")
-               return
-           }
-           
-        let board = Board(value: title)
-        DataBaseManager.shared.addBoard(board: board)
-           
-           print("Board created with title: \(title)")
-           
-       }
-   }
+        guard let title = titleTextField.text, !title.isEmpty else {
+            print("Title is empty")
+            return
+        }
+        let board = Board(title: title)
+        
+        manager.createBoard(board: board)
+        buttonHandler?()
+    }
+}
 

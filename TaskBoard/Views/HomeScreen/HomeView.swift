@@ -10,14 +10,14 @@ import UIKit
 class HomeView: UIView {
     
     var navigationController: UINavigationController?
-    
-    private let manager = DataBaseManager()
+    let manager = DataBaseManager()
     
     lazy var boardTableView: UITableView = {
         let table = UITableView()
         table.register( BoardTableViewCell.self, forCellReuseIdentifier: BoardTableViewCell.reuseID)
         table.delegate = self
         table.dataSource = self
+        table.separatorStyle = .none
         table.translatesAutoresizingMaskIntoConstraints = false
         return table
     }()
@@ -54,22 +54,34 @@ class HomeView: UIView {
 extension HomeView: UITableViewDelegate, UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        manager.getBoard().count
+        manager.boards.count
     }
+    
+//    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+//        let cell = boardTableView.dequeueReusableCell(withIdentifier: BoardTableViewCell.reuseID, for: indexPath) as! BoardTableViewCell
+//        cell.iconImageView.image = UIImage(systemName: "folder.fill")
+//
+//        cell.titleLabel.text = manager.boards[indexPath.row].title
+//        
+//        
+//        return cell
+//    }
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+         if editingStyle == .delete {
+             let boardToDelete = manager.boards[indexPath.row]
+             manager.deleteBoard(board: boardToDelete)
+             tableView.deleteRows(at: [indexPath], with: .automatic)
+         }
+     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = boardTableView.dequeueReusableCell(withIdentifier: BoardTableViewCell.reuseID, for: indexPath) as! BoardTableViewCell
-        if let board = tableData?[indexPath.row] {
-            cell.setupCell = manager.
-        }
+        let board = manager.boards[indexPath.row]
+        cell.setupCell(title: board.title, icon: UIImage(systemName: "folder.fill"), date: board.date)
         return cell
     }
     
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-         let item = tableData[indexPath.row]
-         
-         let detail = DetailViewController()
-         navigationController?.pushViewController(detail, animated: true)
-     }
+    
+
 
 }

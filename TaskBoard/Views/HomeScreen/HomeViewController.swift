@@ -9,6 +9,8 @@ import UIKit
 
 class HomeViewController: UIViewController {
     
+    private let manager = DataBaseManager()
+    
     let homeView = HomeView()
     var addButton: UIBarButtonItem!
     
@@ -32,10 +34,16 @@ class HomeViewController: UIViewController {
     @objc func createButtonTapped() {
         print("createButtonTapped")
         
-        let createBoardViewController = UINavigationController(rootViewController: CreateBoardViewController())
-        createBoardViewController.modalPresentationStyle = .fullScreen
+        let createBoardViewController = CreateBoardViewController()
+        createBoardViewController.buttonHandler = { [weak self] in
+            self?.homeView.manager.getBoard()
+            self?.homeView.boardTableView.reloadData()
+        }
         
-        present(createBoardViewController, animated: true, completion: nil)
+        let navBar = UINavigationController(rootViewController: createBoardViewController)
+        navBar.modalPresentationStyle = .fullScreen
+        
+        present(navBar, animated: true, completion: nil)
     }
 
 }

@@ -18,21 +18,35 @@ class DataBaseManager {
          getBoard()
      }
     
-    func addBoard(board: Board) {
+    func createBoard(board: Board) {
         do {
             try realm.write {
                 realm.add(board)
             }
-        } catch  {
-            print(error.localizedDescription)
+            
+            getBoard()
+        } catch {
+            print("Error creating board: \(error.localizedDescription)")
         }
     }
+
+    func deleteBoard(board: Board) {
+           do {
+               try realm.write {
+                   realm.delete(board)
+               }
+               getBoard()
+           } catch {
+               print("Error deleting board: \(error.localizedDescription)")
+           }
+       }
     
-    
-    func getBoard() -> [Board]{
+    func getBoard(){
         let allBoard = realm.objects(Board.self)
          
-        return Array(allBoard)
+        self.boards = Array(allBoard)
     }
+    
+    
      
 }

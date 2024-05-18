@@ -8,17 +8,13 @@
 import Foundation
 import RealmSwift
 
-
 class Board: Object {
-    @Persisted(primaryKey: true) var id:String = UUID().uuidString
     @Persisted var title: String = ""
     @Persisted var date: Date = Date()
-    // 
-    @Persisted var tasks: List<Task>
     
+    convenience init(title: String) {
+        self.init()
+        self.title = title
+    }
 }
 
-
-class Task: Object{
-    
-}

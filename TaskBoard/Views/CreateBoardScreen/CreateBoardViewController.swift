@@ -10,6 +10,12 @@ import UIKit
 class CreateBoardViewController: UIViewController {
     
     var backButton: UIBarButtonItem!
+    
+    private let createBoardView = CreateBoardView()
+    
+    override func loadView() {
+        view = createBoardView
+    }
 
 
     override func viewDidLoad() {

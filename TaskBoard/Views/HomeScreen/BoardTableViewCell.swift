@@ -69,7 +69,7 @@ class BoardTableViewCell: UITableViewCell {
     
     func setConstraints(){
         NSLayoutConstraint.activate([
-            mainView.topAnchor.constraint(equalTo: topAnchor, constant: 10),
+            mainView.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor, constant: 10),
             mainView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 10),
             mainView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -10),
             mainView.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -10),

@@ -22,7 +22,7 @@ class TabBarViewController: UITabBarController {
 
 
         
-        
+        tabBar.backgroundColor = .systemGray4
         viewControllers = [homeViewController, settingsViewController]
         
         self.tabBar.backgroundColor = .systemGray5

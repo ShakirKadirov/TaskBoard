@@ -13,6 +13,7 @@
 		C7414D152BF8F7BE00DAAB2B /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7414D142BF8F7BE00DAAB2B /* Board.swift */; };
 		C7414D2C2BF93B5700DAAB2B /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = C7414D2B2BF93B5700DAAB2B /* RealmSwift */; };
 		C7414D2D2BF93F3F00DAAB2B /* RealmSwift in Embed Frameworks */ = {isa = PBXBuildFile; productRef = C7414D2B2BF93B5700DAAB2B /* RealmSwift */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		C7414D302BF950BA00DAAB2B /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7414D2F2BF950BA00DAAB2B /* SettingsView.swift */; };
 		C7F6D85C2BF8AF2B00728116 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F6D85B2BF8AF2B00728116 /* AppDelegate.swift */; };
 		C7F6D85E2BF8AF2B00728116 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F6D85D2BF8AF2B00728116 /* SceneDelegate.swift */; };
 		C7F6D8602BF8AF2B00728116 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F6D85F2BF8AF2B00728116 /* HomeViewController.swift */; };
@@ -44,6 +45,7 @@
 		C7414D0E2BF8E8D500DAAB2B /* BoardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardTableViewCell.swift; sourceTree = "<group>"; };
 		C7414D122BF8EDBC00DAAB2B /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		C7414D142BF8F7BE00DAAB2B /* Board.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Board.swift; sourceTree = "<group>"; };
+		C7414D2F2BF950BA00DAAB2B /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		C7F6D8582BF8AF2B00728116 /* TaskBoard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TaskBoard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7F6D85B2BF8AF2B00728116 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C7F6D85D2BF8AF2B00728116 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -142,6 +144,7 @@
 			isa = PBXGroup;
 			children = (
 				C7F6D87A2BF8B2E400728116 /* SettingsViewController.swift */,
+				C7414D2F2BF950BA00DAAB2B /* SettingsView.swift */,
 			);
 			path = SettingScreen;
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 				C7F6D88F2BF8CF2200728116 /* CreateBoardViewController.swift in Sources */,
 				C7F6D8852BF8C47300728116 /* DataBaseManager.swift in Sources */,
 				C7F6D87B2BF8B2E400728116 /* SettingsViewController.swift in Sources */,
+				C7414D302BF950BA00DAAB2B /* SettingsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

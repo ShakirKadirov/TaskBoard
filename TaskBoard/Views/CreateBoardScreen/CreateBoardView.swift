@@ -11,6 +11,8 @@ class CreateBoardView: UIView {
     
     var buttonHandler: (()->Void)?
     private let manager = DataBaseManager()
+    private let settingsView = SettingsView()
+
 
     lazy var titleTextField: UITextField = {
         let textField = UITextField()
@@ -54,6 +56,8 @@ class CreateBoardView: UIView {
             titleTextField.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor, constant: 16),
             titleTextField.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 16),
             titleTextField.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -16),
+            titleTextField.heightAnchor.constraint(equalToConstant: 44),
+
             
             createButton.heightAnchor.constraint(equalToConstant: 44),
             createButton.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 16),
@@ -70,6 +74,7 @@ class CreateBoardView: UIView {
         let board = Board(title: title)
         
         manager.createBoard(board: board)
+        
         buttonHandler?()
     }
 }

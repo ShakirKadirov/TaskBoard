@@ -11,6 +11,8 @@ class HomeView: UIView {
     
     var navigationController: UINavigationController?
     let manager = DataBaseManager()
+    private let settingsView = SettingsView()
+
     
     lazy var boardTableView: UITableView = {
         let table = UITableView()
@@ -62,6 +64,9 @@ extension HomeView: UITableViewDelegate, UITableViewDataSource{
             let boardToDelete = manager.boards[indexPath.row]
             manager.deleteBoard(board: boardToDelete)
             tableView.deleteRows(at: [indexPath], with: .automatic)
+            
+            settingsView.updateBoardsCount()
+            
         }
     }
     

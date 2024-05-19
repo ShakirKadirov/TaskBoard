@@ -47,6 +47,10 @@ class DataBaseManager {
         self.boards = Array(allBoard)
     }
     
+    func getAllBoard() -> Results<Board> {
+          return realm.objects(Board.self)
+      }
+    
     
      
 }

@@ -3,7 +3,7 @@
 TaskBoard - это приложение для управления задачами и досками, созданное на Swift и Realm.
 
 ## Презентационное видео
-[![Watch the video](https://img.youtube.com/vi/VghQBRx7X5U/maxresdefault.jpg)](https://youtube.com/shorts/VghQBRx7X5U?feature=share)
+[![Watch the video](https://youtube.com/shorts/GkbpeIM6Tm4?si=G1mVMcjqWSbFlsaT)]
 
 ## Ветки репозитория
 

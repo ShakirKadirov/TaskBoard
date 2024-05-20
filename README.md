@@ -22,9 +22,9 @@ TaskBoard - это приложение для управления задача
     ```bash
     cd TaskBoard
     git checkout develop
-3.Откройте .xcworkspace файл в Xcode:
-```bash
-open TaskBoard.xcworkspace
+3. Откройте .xcworkspace файл в Xcode:
+   ```bash
+   open TaskBoard.xcworkspace
 
 ## Использование
 

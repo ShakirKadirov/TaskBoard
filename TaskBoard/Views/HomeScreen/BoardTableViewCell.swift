@@ -11,17 +11,17 @@ class BoardTableViewCell: UITableViewCell {
     
     static let reuseID = "Cell"
     
-    lazy var mainView: UIView = {
-        let mainView = UIView()
-        mainView.addSubview(titleLabel)
-        mainView.addSubview(iconImageView)
-        mainView.addSubview(dateLabel)
-        mainView.backgroundColor = .systemGray4
-        mainView.clipsToBounds = true
-        mainView.layer.cornerRadius = 8
-        mainView.translatesAutoresizingMaskIntoConstraints = false
-        return mainView
-    }()
+//    lazy var mainView: UIView = {
+//        let mainView = UIView()
+//        mainView.addSubview(titleLabel)
+//        mainView.addSubview(iconImageView)
+//        mainView.addSubview(dateLabel)
+//        mainView.backgroundColor = .systemGray4
+//        mainView.clipsToBounds = true
+//        mainView.layer.cornerRadius = 8
+//        mainView.translatesAutoresizingMaskIntoConstraints = false
+//        return mainView
+//    }()
     
     lazy var titleLabel: UILabel = {
         let label = UILabel()
@@ -35,6 +35,7 @@ class BoardTableViewCell: UITableViewCell {
     
     lazy var iconImageView: UIImageView = {
         let imageView = UIImageView()
+        imageView.contentMode = .scaleAspectFit
         imageView.translatesAutoresizingMaskIntoConstraints = false
         return imageView
     }()
@@ -53,7 +54,9 @@ class BoardTableViewCell: UITableViewCell {
     
 
     func setupUI(){
-        addSubview(mainView)
+        addSubview(titleLabel)
+        addSubview(iconImageView)
+        addSubview(dateLabel)
         setConstraints()
     }
     
@@ -62,32 +65,31 @@ class BoardTableViewCell: UITableViewCell {
         iconImageView.image = icon
         
         let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "EEEE, MMM d, yyyy" // Формат даты по вашему желанию
+        dateFormatter.dateFormat = "EEEE, MMM d, yyyy"
         let dateString = dateFormatter.string(from: date)
         dateLabel.text = dateString
     }
     
     func setConstraints(){
         NSLayoutConstraint.activate([
-            mainView.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor, constant: 10),
-            mainView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 10),
-            mainView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -10),
-            mainView.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -10),
+//            mainView.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor, constant: 10),
+//            mainView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 10),
+//            mainView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -10),
+//            mainView.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -10),
             
-            iconImageView.leadingAnchor.constraint(equalTo: mainView.leadingAnchor, constant: 16),
-            iconImageView.centerYAnchor.constraint(equalTo: mainView.centerYAnchor),
-            iconImageView.widthAnchor.constraint(equalToConstant: 50),
-            iconImageView.heightAnchor.constraint(equalToConstant: 50),
+            iconImageView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 16),
+            iconImageView.centerYAnchor.constraint(equalTo: centerYAnchor),
+            iconImageView.widthAnchor.constraint(equalToConstant: 24),
+            iconImageView.heightAnchor.constraint(equalToConstant: 24),
             
-            titleLabel.topAnchor.constraint(equalTo: mainView.topAnchor, constant: 16),
+            titleLabel.topAnchor.constraint(equalTo: topAnchor, constant: 16),
             titleLabel.leadingAnchor.constraint(equalTo: iconImageView.trailingAnchor, constant: 16),
-            titleLabel.trailingAnchor.constraint(equalTo: dateLabel.leadingAnchor),
-            titleLabel.bottomAnchor.constraint(equalTo: mainView.bottomAnchor, constant: -16),
+            titleLabel.trailingAnchor.constraint(equalTo: dateLabel.trailingAnchor, constant: -16),
+            titleLabel.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -16),
             
-            dateLabel.topAnchor.constraint(equalTo: mainView.topAnchor, constant: 16),
-            dateLabel.leadingAnchor.constraint(equalTo: mainView.trailingAnchor, constant: 50),
-            dateLabel.trailingAnchor.constraint(equalTo: mainView.trailingAnchor, constant: -16),
-            dateLabel.bottomAnchor.constraint(equalTo: mainView.bottomAnchor, constant: -16)
+            dateLabel.topAnchor.constraint(equalTo: topAnchor, constant: 16),
+            dateLabel.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -16),
+            dateLabel.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -16)
         ])
     }
     

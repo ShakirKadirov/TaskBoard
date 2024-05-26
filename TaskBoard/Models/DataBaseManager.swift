@@ -47,10 +47,23 @@ class DataBaseManager {
         self.boards = Array(allBoard)
     }
     
-    func getAllBoard() -> Results<Board> {
-          return realm.objects(Board.self)
+    func getAllBoard() -> Int {
+          return realm.subscriptions.count
       }
     
     
-     
+    func saveProfileImage(_ profileImage: ProfileImage) {
+        do {
+            try realm.write {
+                realm.add(profileImage)
+            }
+        } catch {
+            print("Error saving profile image: \(error.localizedDescription)")
+        }
+    }
+    
+    // Извлечение изображения профиля
+    func getProfileImage() -> ProfileImage? {
+        return realm.objects(ProfileImage.self).first
+    }
 }

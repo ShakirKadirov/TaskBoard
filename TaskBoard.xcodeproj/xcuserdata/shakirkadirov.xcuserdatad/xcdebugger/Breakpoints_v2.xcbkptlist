@@ -14,6 +14,22 @@
             filePath = "TaskBoard/Views/CreateBoardScreen/CreateBoardView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "73"
+            endingLineNumber = "73"
+            landmarkName = "createButtonTapped()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DDF54F6B-CEDD-4BA1-A3A2-943F417351DE"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TaskBoard/Views/CreateBoardScreen/CreateBoardView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
             startingLineNumber = "74"
             endingLineNumber = "74"
             landmarkName = "createButtonTapped()"
@@ -23,7 +39,7 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "DDF54F6B-CEDD-4BA1-A3A2-943F417351DE"
+            uuid = "884C0F54-C417-45EE-BF8E-7565A21F6FA5"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
@@ -39,22 +55,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "884C0F54-C417-45EE-BF8E-7565A21F6FA5"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "TaskBoard/Views/CreateBoardScreen/CreateBoardView.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "76"
-            endingLineNumber = "76"
-            landmarkName = "createButtonTapped()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "10D29ED3-8F14-4CF9-9761-9375D4935102"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
@@ -62,8 +62,8 @@
             filePath = "TaskBoard/Views/HomeScreen/HomeViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "40"
-            endingLineNumber = "40"
+            startingLineNumber = "43"
+            endingLineNumber = "43"
             landmarkName = "createButtonTapped()"
             landmarkType = "7">
             <Locations>
@@ -97,6 +97,36 @@
                   endingLineNumber = "41"
                   offsetFromSymbolStart = "224">
                </Location>
+               <Location
+                  uuid = "10D29ED3-8F14-4CF9-9761-9375D4935102 - 278f444dac9f1f6c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in TaskBoard.HomeViewController.createButtonTapped() -&gt; ()"
+                  moduleName = "TaskBoard"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/shakirkadirov/Developer/TaskBoard/TaskBoard/Views/HomeScreen/HomeViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "40"
+                  endingLineNumber = "40"
+                  offsetFromSymbolStart = "260">
+               </Location>
+               <Location
+                  uuid = "10D29ED3-8F14-4CF9-9761-9375D4935102 - 278f444dac9f1f01"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in TaskBoard.HomeViewController.createButtonTapped() -&gt; ()"
+                  moduleName = "TaskBoard"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/shakirkadirov/Developer/TaskBoard/TaskBoard/Views/HomeScreen/HomeViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "43"
+                  endingLineNumber = "43"
+                  offsetFromSymbolStart = "260">
+               </Location>
             </Locations>
          </BreakpointContent>
       </BreakpointProxy>
@@ -104,14 +134,14 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "016C841D-8AF6-47E5-9D67-FAB14F678155"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TaskBoard/Views/HomeScreen/HomeViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "38"
-            endingLineNumber = "38"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
             landmarkName = "createButtonTapped()"
             landmarkType = "7">
             <Locations>
@@ -160,6 +190,36 @@
                   endingLineNumber = "39"
                   offsetFromSymbolStart = "20">
                </Location>
+               <Location
+                  uuid = "016C841D-8AF6-47E5-9D67-FAB14F678155 - e7c16d438acb0a6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TaskBoard.HomeViewController.createButtonTapped() -&gt; ()"
+                  moduleName = "TaskBoard"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/shakirkadirov/Developer/TaskBoard/TaskBoard/Views/HomeScreen/HomeViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "38"
+                  endingLineNumber = "38"
+                  offsetFromSymbolStart = "312">
+               </Location>
+               <Location
+                  uuid = "016C841D-8AF6-47E5-9D67-FAB14F678155 - 278f444dac9f1eaa"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in TaskBoard.HomeViewController.createButtonTapped() -&gt; ()"
+                  moduleName = "TaskBoard"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/shakirkadirov/Developer/TaskBoard/TaskBoard/Views/HomeScreen/HomeViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "38"
+                  endingLineNumber = "38"
+                  offsetFromSymbolStart = "20">
+               </Location>
             </Locations>
          </BreakpointContent>
       </BreakpointProxy>
@@ -167,7 +227,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "0D8022D8-D49F-4A76-8772-AD9375BBE754"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TaskBoard/Models/DataBaseManager.swift"
@@ -215,7 +275,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "96AC98E1-37F8-4457-BEF5-53F4247363DF"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TaskBoard/Models/DataBaseManager.swift"
@@ -231,7 +291,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "213A32D8-57AF-4419-8AC7-776820169FDD"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TaskBoard/Models/DataBaseManager.swift"
@@ -247,7 +307,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "D31FCE09-47EE-410A-8AF4-540BF882DB7B"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TaskBoard/Models/DataBaseManager.swift"
@@ -256,22 +316,6 @@
             startingLineNumber = "26"
             endingLineNumber = "26"
             landmarkName = "createBoard(board:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "F27758FC-68B3-48B9-B4DB-CAFC3584F0EA"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "TaskBoard/Views/HomeScreen/HomeView.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "59"
-            endingLineNumber = "59"
-            landmarkName = "tableView(_:numberOfRowsInSection:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

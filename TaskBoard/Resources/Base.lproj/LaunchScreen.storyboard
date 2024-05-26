@@ -18,18 +18,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="list.bullet.clipboard" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="rfE-dQ-OTr">
-                                <rect key="frame" x="119" y="307.66666666666669" width="155" height="235.00000000000006"/>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="from Shakir Kadirov" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wlI-Jz-u0A">
                                 <rect key="frame" x="18" y="782" width="361" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <color key="textColor" name="AccentColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="TaskBoard" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xyu-iY-PDo">
-                                <rect key="frame" x="129" y="537" width="135" height="36"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="list.bullet.clipboard" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="rfE-dQ-OTr">
+                                <rect key="frame" x="148.66666666666666" y="388.33333333333337" width="96" height="99"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="96" id="BHF-ww-MgP"/>
+                                    <constraint firstAttribute="height" constant="96" id="RxI-vb-6fd"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TaskBoard" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xyu-iY-PDo">
+                                <rect key="frame" x="142.33333333333334" y="502.66666666666669" width="108.33333333333334" height="28.666666666666686"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <color key="textColor" name="AccentColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -37,18 +41,13 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="rfE-dQ-OTr" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="251.00000000000006" id="1xc-ip-eLY"/>
-                            <constraint firstItem="wlI-Jz-u0A" firstAttribute="leading" secondItem="xyu-iY-PDo" secondAttribute="trailing" constant="-248" id="5R1-w4-MlI"/>
-                            <constraint firstItem="xyu-iY-PDo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="131" id="7bR-F8-kTg"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wlI-Jz-u0A" secondAttribute="trailing" constant="14" id="7vT-cw-iSV"/>
-                            <constraint firstItem="rfE-dQ-OTr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="119" id="Gv9-ia-ufP"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rfE-dQ-OTr" secondAttribute="trailing" constant="119" id="PO8-9l-2Ru"/>
+                            <constraint firstItem="rfE-dQ-OTr" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Fl5-Og-Jei"/>
                             <constraint firstItem="wlI-Jz-u0A" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="18" id="QkV-hr-WJU"/>
-                            <constraint firstAttribute="bottom" secondItem="xyu-iY-PDo" secondAttribute="bottom" constant="266" id="RGq-3k-ZAh"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="wlI-Jz-u0A" secondAttribute="bottom" id="W87-qe-NSa"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xyu-iY-PDo" secondAttribute="trailing" constant="127" id="ceK-aE-duH"/>
-                            <constraint firstItem="xyu-iY-PDo" firstAttribute="leading" secondItem="rfE-dQ-OTr" secondAttribute="trailing" constant="-143" id="f62-tl-T1f"/>
-                            <constraint firstItem="xyu-iY-PDo" firstAttribute="top" secondItem="rfE-dQ-OTr" secondAttribute="bottom" constant="8" symbolic="YES" id="yDv-et-n5P"/>
+                            <constraint firstItem="xyu-iY-PDo" firstAttribute="top" secondItem="rfE-dQ-OTr" secondAttribute="bottom" constant="16" id="dDe-Z6-2oD"/>
+                            <constraint firstItem="xyu-iY-PDo" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="dSZ-TX-asl"/>
+                            <constraint firstItem="rfE-dQ-OTr" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="g4p-Hk-BbU"/>
                         </constraints>
                     </view>
                 </viewController>

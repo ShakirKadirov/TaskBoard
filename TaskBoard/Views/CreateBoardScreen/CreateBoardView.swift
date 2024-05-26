@@ -13,8 +13,7 @@ class CreateBoardView: UIView {
     private let manager = DataBaseManager()
     private let settingsView = SettingsView()
 
-
-    lazy var titleTextField: UITextField = {
+    private lazy var titleTextField: UITextField = {
         let textField = UITextField()
         textField.placeholder = "Enter board title"
         textField.borderStyle = .roundedRect
@@ -22,7 +21,7 @@ class CreateBoardView: UIView {
         return textField
     }()
     
-    lazy var createButton: UIButton = {
+    private lazy var createButton: UIButton = {
         let button = UIButton(type: .system)
         button.setTitle("Create", for: .normal)
         button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 18)

@@ -8,56 +8,50 @@
 import UIKit
 
 class SettingsView: UIView {
-
-    private let manager = DataBaseManager()
-    weak var tableView: UITableView?
-    var buttonHandler: (()->Void)?
-
-
     
+    let profileImageView: UIImageView = {
+        let imageView = UIImageView()
+        imageView.contentMode = .scaleAspectFill
+        imageView.clipsToBounds = true
+        imageView.layer.cornerRadius = 50
+        imageView.backgroundColor = .red // Цвет фона для отладки
+        imageView.translatesAutoresizingMaskIntoConstraints = false
+        return imageView
+    }()
     
-    lazy var boardsCountLabel: UILabel = {
-        let label = UILabel()
-        label.font = UIFont.systemFont(ofSize: 18)
-        label.translatesAutoresizingMaskIntoConstraints = false
-        return label
+    let uploadButton: UIButton = {
+        let button = UIButton(type: .system)
+        button.setTitle("Upload Image", for: .normal)
+        button.translatesAutoresizingMaskIntoConstraints = false
+        return button
     }()
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        
-        setupUI()
-        updateBoardsCount()
+        setupView()
     }
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
-    private func setupUI() {
-        addSubview(boardsCountLabel)
+    private func setupView() {
+        backgroundColor = .gray
+        addSubview(profileImageView)
+        addSubview(uploadButton)
         
-        setConstraints()
-    }
-    
-    private func setConstraints() {
         NSLayoutConstraint.activate([
-
-            boardsCountLabel.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor, constant: 32),
-            boardsCountLabel.centerYAnchor.constraint(equalTo: centerYAnchor)
+            profileImageView.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor, constant: 20), // Отступ 20 пунктов от верхней части safe area
+            profileImageView.centerXAnchor.constraint(equalTo: self.centerXAnchor),
+            profileImageView.widthAnchor.constraint(equalToConstant: 100),
+            profileImageView.heightAnchor.constraint(equalToConstant: 100),
+            
+            uploadButton.topAnchor.constraint(equalTo: profileImageView.bottomAnchor, constant: 20),
+            uploadButton.centerXAnchor.constraint(equalTo: self.centerXAnchor)
         ])
     }
     
-    func updateBoardsCount() {
-        // Извлекаем все доски из базы данных
-        let boards = manager.getAllBoard()
-        
-        // Считаем количество дос
-        let boardsCount = boards.count
-        
-        // Обновляем текст метки
-        boardsCountLabel.text = "Total boards: \(boardsCount)"
-    }
-
-
 }
+
+
+

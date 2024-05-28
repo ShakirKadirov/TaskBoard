@@ -38,7 +38,7 @@ class CreateBoardViewController: UIViewController {
     }
     
     @objc func backButtonTapped() {
-        dismiss(animated: true, completion: nil) // Закрытие текущего контроллера
+        dismiss(animated: true, completion: nil) 
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {

@@ -37,7 +37,6 @@ class SettingsViewController: UIViewController, UIImagePickerControllerDelegate,
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         if let pickedImage = info[.originalImage] as? UIImage {
             settingsView.profileImageView.image = pickedImage
-            // Сохранение изображения в базу данных
             saveProfileImageToDatabase(image: pickedImage)
         }
         picker.dismiss(animated: true, completion: nil)
@@ -71,7 +70,6 @@ extension SettingsView: UIImagePickerControllerDelegate, UINavigationControllerD
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         if let pickedImage = info[.originalImage] as? UIImage {
             profileImageView.image = pickedImage
-            // Сохранение изображения в базу данных
             saveProfileImageToDatabase(image: pickedImage)
         }
         picker.dismiss(animated: true, completion: nil)
@@ -82,7 +80,6 @@ extension SettingsView: UIImagePickerControllerDelegate, UINavigationControllerD
     }
     
     private func saveProfileImageToDatabase(image: UIImage) {
-        // Преобразование UIImage в Data
         if let imageData = image.jpegData(compressionQuality: 0.8) {
             let profileImage = ProfileImage()
             profileImage.imageData = imageData

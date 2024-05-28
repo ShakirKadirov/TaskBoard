@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		C717BDA72C033738008EA366 /* ProfileImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C717BDA62C033738008EA366 /* ProfileImage.swift */; };
+		C717BDAA2C034082008EA366 /* CreateTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C717BDA92C034082008EA366 /* CreateTaskViewController.swift */; };
+		C717BDAC2C0342E7008EA366 /* CreateTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C717BDAB2C0342E7008EA366 /* CreateTaskView.swift */; };
 		C7414D0D2BF8DC8900DAAB2B /* CreateBoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7414D0C2BF8DC8900DAAB2B /* CreateBoardView.swift */; };
 		C7414D0F2BF8E8D500DAAB2B /* BoardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7414D0E2BF8E8D500DAAB2B /* BoardTableViewCell.swift */; };
 		C7414D132BF8EDBC00DAAB2B /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7414D122BF8EDBC00DAAB2B /* DetailViewController.swift */; };
@@ -44,6 +46,8 @@
 
 /* Begin PBXFileReference section */
 		C717BDA62C033738008EA366 /* ProfileImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileImage.swift; sourceTree = "<group>"; };
+		C717BDA92C034082008EA366 /* CreateTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTaskViewController.swift; sourceTree = "<group>"; };
+		C717BDAB2C0342E7008EA366 /* CreateTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTaskView.swift; sourceTree = "<group>"; };
 		C7414D0C2BF8DC8900DAAB2B /* CreateBoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateBoardView.swift; sourceTree = "<group>"; };
 		C7414D0E2BF8E8D500DAAB2B /* BoardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardTableViewCell.swift; sourceTree = "<group>"; };
 		C7414D122BF8EDBC00DAAB2B /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
@@ -76,11 +80,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C717BDA82C03406A008EA366 /* CreateTaskScreen */ = {
+			isa = PBXGroup;
+			children = (
+				C717BDA92C034082008EA366 /* CreateTaskViewController.swift */,
+				C717BDAB2C0342E7008EA366 /* CreateTaskView.swift */,
+			);
+			path = CreateTaskScreen;
+			sourceTree = "<group>";
+		};
 		C78DA4D02C027ABC007E3DA3 /* DetailScreen */ = {
 			isa = PBXGroup;
 			children = (
 				C7414D122BF8EDBC00DAAB2B /* DetailViewController.swift */,
 				C78DA4D12C027BB9007E3DA3 /* DetailView.swift */,
+				C717BDA82C03406A008EA366 /* CreateTaskScreen */,
 			);
 			path = DetailScreen;
 			sourceTree = "<group>";
@@ -270,6 +284,7 @@
 				C7F6D8602BF8AF2B00728116 /* HomeViewController.swift in Sources */,
 				C7F6D88C2BF8C79800728116 /* HomeView.swift in Sources */,
 				C78DA4D22C027BB9007E3DA3 /* DetailView.swift in Sources */,
+				C717BDAC2C0342E7008EA366 /* CreateTaskView.swift in Sources */,
 				C7414D132BF8EDBC00DAAB2B /* DetailViewController.swift in Sources */,
 				C7F6D85C2BF8AF2B00728116 /* AppDelegate.swift in Sources */,
 				C7F6D8792BF8B1AE00728116 /* TabBarViewController.swift in Sources */,
@@ -281,6 +296,7 @@
 				C7F6D87B2BF8B2E400728116 /* SettingsViewController.swift in Sources */,
 				C717BDA72C033738008EA366 /* ProfileImage.swift in Sources */,
 				C7414D302BF950BA00DAAB2B /* SettingsView.swift in Sources */,
+				C717BDAA2C034082008EA366 /* CreateTaskViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

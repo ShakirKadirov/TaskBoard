@@ -9,24 +9,37 @@ import UIKit
 
 class DetailView: UIButton {
     
-     lazy var createButton: UIButton = {
-        let button = UIButton(type: .system)
-        button.setTitle("Create", for: .normal)
-        button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 18)
-        button.backgroundColor = .systemBlue
-        button.setTitleColor(.white, for: .normal)
-        button.layer.cornerRadius = 8
-        button.translatesAutoresizingMaskIntoConstraints = false
-        return button
+    lazy var noteTableView: UITableView = {
+        let table = UITableView()
+        table.backgroundColor = .red
+        table.register( BoardTableViewCell.self, forCellReuseIdentifier: BoardTableViewCell.reuseID)
+        table.translatesAutoresizingMaskIntoConstraints = false
+        return table
     }()
-    
     
     
     override init(frame: CGRect) {
         super.init(frame: frame)
+        setupUI()
+        
     }
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+    
+    func setupUI(){
+        addSubview(noteTableView)
+        setConstraints()
+    }
+    
+    
+    func setConstraints(){
+        NSLayoutConstraint.activate([
+            noteTableView.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor),
+            noteTableView.leadingAnchor.constraint(equalTo: leadingAnchor),
+            noteTableView.trailingAnchor.constraint(equalTo: trailingAnchor),
+            noteTableView.bottomAnchor.constraint(equalTo: safeAreaLayoutGuide.bottomAnchor)
+        ])
     }
 }

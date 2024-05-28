@@ -9,9 +9,9 @@ import Foundation
 import RealmSwift
 
 class Board: Object {
-    @Persisted var title: String?
-    @Persisted var date: Date = Date()
-//    @Persisted var note: Note 
+    @objc dynamic var title: String?
+    @objc dynamic var date: Date = Date()
+    let tasks = List<Task>() 
     
     convenience init(title: String) {
         self.init()
@@ -20,8 +20,9 @@ class Board: Object {
 }
 
 
-//class Note: Object{
-//    @Persisted var title: String?
-//    @Persisted var text: String?
-//}
+class Task: Object {
+    @objc dynamic var name: String = ""
+    @objc dynamic var details: String?
+    @objc dynamic var dueDate: Date?
+}
 

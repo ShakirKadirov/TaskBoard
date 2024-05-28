@@ -5,6 +5,7 @@
 //  Created by Shakir Kadirov on 18.05.2024.
 //
 
+
 import UIKit
 
 class DetailViewController: UIViewController {
@@ -19,11 +20,16 @@ class DetailViewController: UIViewController {
         super.viewDidLoad()
         
         view.backgroundColor = .white
-        detailView.createButton.addTarget(self, action: #selector(createButtonTapped), for: .touchUpInside)
+        
+        let taskButton = UIBarButtonItem(title: "Add Task", style: .plain, target: self, action: #selector(createButtonTapped))
+        navigationItem.rightBarButtonItem = taskButton
+        
     }
     
-    
     @objc func createButtonTapped() {
-        
+        let createTaskVC = CreateTaskViewController()
+        let navigationController = UINavigationController(rootViewController: createTaskVC)
+        present(navigationController, animated: true, completion: nil)
+
     }
 }

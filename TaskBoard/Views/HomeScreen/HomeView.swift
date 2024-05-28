@@ -10,7 +10,6 @@ import UIKit
 class HomeView: UIView {
     
     let manager = DataBaseManager()
-    private let settingsView = SettingsView()
     
     
     lazy var boardTableView: UITableView = {

@@ -127,6 +127,21 @@
                   endingLineNumber = "43"
                   offsetFromSymbolStart = "260">
                </Location>
+               <Location
+                  uuid = "10D29ED3-8F14-4CF9-9761-9375D4935102 - 278f444dac9f1f01"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in TaskBoard.HomeViewController.createButtonTapped() -&gt; ()"
+                  moduleName = "TaskBoard"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/shakirkadirov/Developer/TaskBoard/TaskBoard/Views/HomeScreen/HomeViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "43"
+                  endingLineNumber = "43"
+                  offsetFromSymbolStart = "224">
+               </Location>
             </Locations>
          </BreakpointContent>
       </BreakpointProxy>
@@ -317,6 +332,70 @@
             endingLineNumber = "26"
             landmarkName = "createBoard(board:)"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DD846E27-17BF-4571-AF4B-A748DF4C7FDD"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TaskBoard/Views/HomeScreen/HomeViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "36"
+            endingLineNumber = "36"
+            landmarkName = "HomeViewController"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "71782E73-4346-40FD-B432-C101B00AAB35"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TaskBoard/Views/HomeScreen/DetailScreen/CreateTaskScreen/CreateTaskViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
+            landmarkName = "closeVC()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "71782E73-4346-40FD-B432-C101B00AAB35 - 39ca9db0cc9425c1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TaskBoard.CreateTaskViewController.closeVC() -&gt; ()"
+                  moduleName = "TaskBoard"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/shakirkadirov/Developer/TaskBoard/TaskBoard/Views/HomeScreen/DetailScreen/CreateTaskScreen/CreateTaskViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "28"
+                  endingLineNumber = "28"
+                  offsetFromSymbolStart = "56">
+               </Location>
+               <Location
+                  uuid = "71782E73-4346-40FD-B432-C101B00AAB35 - 39ca9db0cc9425c1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TaskBoard.CreateTaskViewController.closeVC() -&gt; ()"
+                  moduleName = "TaskBoard"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/shakirkadirov/Developer/TaskBoard/TaskBoard/Views/HomeScreen/DetailScreen/CreateTaskScreen/CreateTaskViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "28"
+                  endingLineNumber = "28"
+                  offsetFromSymbolStart = "36">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

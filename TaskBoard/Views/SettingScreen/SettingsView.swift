@@ -14,7 +14,7 @@ class SettingsView: UIView {
         imageView.contentMode = .scaleAspectFill
         imageView.clipsToBounds = true
         imageView.layer.cornerRadius = 50
-        imageView.backgroundColor = .red // Цвет фона для отладки
+        imageView.backgroundColor = .red
         imageView.translatesAutoresizingMaskIntoConstraints = false
         return imageView
     }()
@@ -41,7 +41,7 @@ class SettingsView: UIView {
         addSubview(uploadButton)
         
         NSLayoutConstraint.activate([
-            profileImageView.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor, constant: 20), // Отступ 20 пунктов от верхней части safe area
+            profileImageView.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor, constant: 20), 
             profileImageView.centerXAnchor.constraint(equalTo: self.centerXAnchor),
             profileImageView.widthAnchor.constraint(equalToConstant: 100),
             profileImageView.heightAnchor.constraint(equalToConstant: 100),
